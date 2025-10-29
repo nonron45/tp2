@@ -1,6 +1,6 @@
 import pytest
-def test_function_is_callabel():
-     def f():
-         pass
-
+def string_Calculator1():
+         return ""
+def test_string_Calculator1_returns_empty():
+   assert string_Calculator1() == ""
 
