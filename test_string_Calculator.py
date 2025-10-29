@@ -2,9 +2,9 @@ from unittest import result
 
 import pytest
 from  String_Calculator import string_Calculator1
-
-def test_string_Calculator1_returns_empty():
-    result = string_Calculator1("")
-    assert result == 0
+@pytest.mark.parametrize("n, expected_result",[("",""),("0",0),])
+def test_string_Calculator1_returns_empty(n:str, expected_result:int):
+    result = string_Calculator1(n)
+    assert result == expected_result
 
 
