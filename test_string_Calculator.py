@@ -1,6 +1,10 @@
+from unittest import result
+
 import pytest
-def string_Calculator1():
-         return ""
+from  String_Calculator import string_Calculator1
+
 def test_string_Calculator1_returns_empty():
-   assert string_Calculator1() == ""
+    result = string_Calculator1("")
+    assert result == 0
+
 
